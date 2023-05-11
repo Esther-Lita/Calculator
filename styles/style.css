@@ -1,0 +1,76 @@
+body {
+  background-color: #eeeeee;
+  padding-top: 50px;
+}
+
+#container {
+  padding: 60px 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid #76876d;
+  border-radius: 30px;
+  background-color: #d6e8db;
+}
+
+#display {
+  background-color: #eeeeee;
+  text-align: end;
+  font-size: 40px;
+  padding: 20px;
+  border: 1px solid #76876d;
+  border-radius: 8px;
+  height: 120px;
+}
+
+#display,
+#container {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.cal-btn {
+  margin-top: 20px;
+  display: grid;
+  gap: 6px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.btn {
+  font-size: 20px;
+  padding: 15px 30px;
+  border: none;
+  border-bottom: 3px solid #76876d;
+  border-radius: 8px;
+  background: #a3bb98;
+}
+
+.btn:hover {
+  background: #a1c66d;
+}
+
+.btn:active {
+  background: #a1c66d;
+  border: 1px solid #789451;
+}
+
+.number {
+  background: #fec260;
+  border-bottom: 3px solid #cc9c4e;
+}
+
+.number:hover {
+  background: #ffe054;
+}
+
+.number:active {
+  border: 1px solid #ccb343;
+}
+
+.clear,
+.equals {
+  grid-column: span 2;
+}
+
+#zero {
+  grid-column: span 3;
+}
